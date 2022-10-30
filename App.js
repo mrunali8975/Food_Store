@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import SearchScreen from './src/screen/SearchScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
+import ResultsShow from './src/screen/ResultsShow';
 const Stack = createNativeStackNavigator();
 
 function MyStack() {
@@ -19,6 +20,14 @@ function MyStack() {
           headerTitleAlign:'center'
         }}
         component={SearchScreen}
+      />
+       <Stack.Screen
+        name="ResultsShow"
+        options={{
+          title: 'Results Show',
+          headerTitleAlign:'center'
+        }}
+        component={ResultsShow}
       />
     </Stack.Navigator>
     </NavigationContainer>

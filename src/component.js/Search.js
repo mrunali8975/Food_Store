@@ -6,6 +6,7 @@ const Search = ({term,onTermChange,onTermSubmit}) => {
     <View style={style.backgroundStyle}>
       <Icon name="search" style={style.iconStyle} color="black" />
       <TextInput style={style.inputStyle} placeholder='Search'
+      
       value={term}
       autoCapitalize="none"
       autoCorrect={false}
@@ -24,7 +25,8 @@ const style = StyleSheet.create({
     marginHorizontal: 15,
     flexDirection:'row',
     alignItems:'center',
-    marginTop:15
+    marginTop:15,
+    marginBottom:10
 
     
   },
@@ -38,7 +40,8 @@ const style = StyleSheet.create({
   inputStyle:
   {
     flex:1,
-    fontSize:18
+    fontSize:18,
+    color:'black'
   }
 });
 export default Search;
